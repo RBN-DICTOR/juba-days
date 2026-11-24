@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Juba Days Law Associates | Law firm in Juba, South Sudan</title>
+<meta name="description" content="Juba Days Law Associates, a law firm in Juba, South Sudan. Call +211 918 882 297 to arrange a consultation.">
+<meta name="theme-color" content="#0e1d18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --ink:#0e1d18;--ink2:#17302a;--moss:#244a3f;
+ --brass:#c8923a;--brass2:#e6b765;
+ --ivory:#f4eee2;--paper:#fffdf8;--text:#1d2a25;--mut:#5c6a63;--line:rgba(14,29,24,.16);
+ --d:"Fraunces",Georgia,serif;--b:"Instrument Sans",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--ivory);color:var(--text);font:400 17px/1.65 var(--b);overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+h1,h2,h3{font-family:var(--d);margin:0;font-weight:500;line-height:1.04;letter-spacing:-.015em}
+h1{font-size:clamp(3rem,8.4vw,7rem)}
+h2{font-size:clamp(2.1rem,5vw,3.6rem);max-width:18ch}
+p{margin:0;max-width:58ch;color:var(--mut)}
+.wrap{width:min(1160px,100% - 40px);margin:0 auto}
+section{padding:110px 0;position:relative}
+.k{font:600 .78rem var(--b);letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.k::before{content:"";width:34px;height:1.5px;background:currentColor}
+
+#prog{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--brass);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+nav{position:fixed;inset:0 0 auto 0;z-index:50;color:#fff;padding:calc(14px + env(safe-area-inset-top,0px)) 0 14px;transition:background .35s,padding .35s}
+nav.s{background:rgba(14,29,24,.94);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;font:500 1.2rem var(--d)}
+.mark i{font:500 .95rem var(--d);font-style:normal;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--brass);color:var(--brass2);display:grid;place-items:center}
+.links{display:flex;gap:28px;align-items:center}
+.links a{text-decoration:none;font-size:.93rem;font-weight:500;position:relative}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1.5px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.links a:not(.btn):hover::after{transform:scaleX(1)}
+#mb{display:none;background:none;border:1.5px solid rgba(255,255,255,.4);color:#fff;padding:8px 16px;font:600 .88rem var(--b);border-radius:99px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--brass);color:var(--ink);font:600 .95rem var(--b);padding:14px 26px;border:0;border-radius:99px;text-decoration:none;cursor:pointer;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(200,146,58,.4)}
+.btn.o{background:transparent;color:inherit;border:1.5px solid currentColor}
+.btn.o:hover{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:none}
+.hero .btn.o:hover{background:#fff;color:var(--ink);border-color:#fff}
+
+/* HERO */
+.hero{background:radial-gradient(ellipse at 72% 45%,var(--moss) 0,var(--ink2) 38%,var(--ink) 75%);color:#fff;min-height:100svh;padding:130px 0 90px;display:grid;align-items:center;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 120px);mask:linear-gradient(#000,transparent 85%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;position:relative}
+.copy{will-change:transform,opacity}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .l span{display:block;transform:translateY(112%);animation:up 1.1s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .l:nth-child(2) span{animation-delay:.12s}
+.hero h1 .l:nth-child(3) span{animation-delay:.24s;font-style:italic;color:var(--brass2)}
+@keyframes up{to{transform:none}}
+.hero p{color:#cfdcd5;font-size:1.12rem;margin:28px 0 34px;opacity:0;animation:fade .9s .6s forwards}
+.cta{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fade .9s .75s forwards}
+.hours{margin-top:30px;display:inline-flex;gap:10px;align-items:center;font-size:.9rem;color:#cfdcd5;opacity:0;animation:fade .9s .9s forwards}
+.hours b{width:9px;height:9px;border-radius:50%;background:#58d68d;box-shadow:0 0 0 0 rgba(88,214,141,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px transparent}}
+@keyframes fade{to{opacity:1}}
+
+.stage{perspective:1300px;height:440px;display:grid;place-items:center;will-change:transform}
+.sway{transform-style:preserve-3d;animation:sway 10s ease-in-out infinite}
+@keyframes sway{50%{transform:translateY(-12px)}}
+.tilt{transform-style:preserve-3d;transform:rotateX(8deg) rotateY(-28deg);position:relative;display:flex;align-items:flex-end;gap:5px;height:300px;padding:0 6px}
+.tilt::after{content:"";position:absolute;left:-40px;right:-40px;bottom:-22px;height:44px;background:radial-gradient(ellipse,rgba(0,0,0,.55),transparent 70%);transform:translateZ(-60px) rotateX(90deg) translateZ(-20px)}
+.bk{position:relative;transform-style:preserve-3d;flex:none}
+.bk>div{position:absolute;backface-visibility:hidden}
+.bk .f{inset:0;background:var(--c);background-image:linear-gradient(90deg,rgba(0,0,0,.35),rgba(255,255,255,.08) 30%,rgba(0,0,0,.3));border-radius:2px}
+.bk .f::before,.bk .f::after{content:"";position:absolute;left:0;right:0;height:5px;background:linear-gradient(var(--brass2),var(--brass))}
+.bk .f::before{top:16%}.bk .f::after{bottom:14%}
+.bk .f i{position:absolute;left:25%;right:25%;top:42%;height:16%;border:1.5px solid var(--brass2);border-left:0;border-right:0}
+.bk .sd{background:linear-gradient(90deg,#efe5cf,#d6c8a6);background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0 1px,transparent 1px 4px)}
+.bk .tp{background:#d9ccaa}
+.ring{position:absolute;width:420px;height:420px;border:1.5px solid rgba(230,183,101,.28);border-radius:50%;transform:translateZ(-120px);pointer-events:none}
+.cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:grid;justify-items:center;gap:8px;color:#cfdcd5;font:600 .7rem var(--b);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;background:none;border:0;cursor:pointer}
+.cue i{width:1.5px;height:46px;background:linear-gradient(var(--brass2),transparent);animation:cue 2s infinite}
+@keyframes cue{50%{transform:translateY(10px);opacity:.4}}
+
+/* FIRM */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:start}
+.rule{height:1.5px;width:90px;background:var(--brass);margin:28px 0;transform-origin:left;transform:scaleX(0);transition:transform 1.1s .2s}
+.in .rule{transform:none}
+.fact{background:var(--paper);border:1px solid var(--line);padding:34px;box-shadow:0 30px 60px rgba(14,29,24,.1);transform-style:preserve-3d;transition:transform .2s ease-out}
+.fact dl{margin:0;display:grid;gap:20px}
+.fact dt{font:600 .74rem var(--b);letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.fact dd{margin:4px 0 0;font:500 1.25rem/1.35 var(--d);color:var(--ink)}
+.fact dd small{display:block;font:400 .85rem var(--b);color:var(--mut);margin-top:2px}
+
+/* PRACTICE */
+.areas{background:var(--ink);color:#fff}
+.areas p{color:#cfdcd5}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:54px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;perspective:1100px}
+.pa{border:1px solid rgba(255,255,255,.18);padding:34px;position:relative;transform-style:preserve-3d;transition:transform .25s ease-out,border-color .3s,background .3s;background:linear-gradient(160deg,rgba(255,255,255,.05),transparent)}
+.pa:hover{border-color:var(--brass);background:linear-gradient(160deg,rgba(200,146,58,.14),transparent)}
+.pa .n{font:500 .9rem var(--d);color:var(--brass2);margin-bottom:34px;display:block}
+.pa h3{font-size:1.6rem;margin-bottom:10px}
+.pa a{display:inline-block;margin-top:20px;color:var(--brass2);font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--brass2)}
+.tbc{position:absolute;top:30px;right:30px;font-size:.72rem;border:1px dashed var(--brass2);color:var(--brass2);padding:2px 10px;border-radius:99px}
+
+/* APPROACH */
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:56px}
+.vals div{border-top:1.5px solid var(--ink);padding-top:22px}
+.vals h3{font-size:1.5rem;margin-bottom:8px}
+.team{padding-top:0}
+.team .card{border:1px solid var(--line);background:var(--paper);padding:0 0 28px}
+.team .ph{aspect-ratio:4/3;background:linear-gradient(135deg,#e6dcc6,#cfc2a3);display:grid;place-items:center;color:var(--ink);font:500 1.05rem var(--d);margin-bottom:22px}
+.team .card h3,.team .card p{padding:0 26px}.team .card h3{font-size:1.4rem;margin-bottom:6px}
+
+/* FAQ */
+.faq{max-width:780px;margin-top:46px}
+details{border-top:1px solid var(--line);padding:22px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{font:500 1.3rem var(--d);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brass);font-size:1.7rem;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px}
+
+/* CONTACT */
+.contact{background:var(--paper)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.info{display:grid;gap:22px;margin:32px 0}
+.info div{border-left:2px solid var(--brass);padding-left:18px;color:var(--mut)}
+.info b{display:block;font:500 1.2rem var(--d);color:var(--ink)}
+form{background:var(--ivory);border:1px solid var(--line);padding:34px;display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:500;font-size:.95rem}
+input,select,textarea{font:inherit;border:1.5px solid var(--line);background:#fff;padding:12px 14px;border-radius:6px;width:100%;color:var(--text)}
+textarea{min-height:110px;resize:vertical}
+.warn{font-size:.85rem;color:var(--mut)}
+#er{color:#9b1c1c;min-height:1.2em}
+footer{background:var(--ink);color:#b9c9c1;padding:46px 0 100px;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.wa{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;background:var(--ivory);color:var(--ink);font:600 .9rem var(--b);padding:13px 20px;border:1.5px solid var(--brass);border-radius:99px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+#dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:40;display:grid;gap:12px}
+#dots a{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--brass);display:block;transition:background .3s,transform .3s}
+#dots a.on{background:var(--brass);transform:scale(1.4)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.grid3 .rv:nth-child(2){transition-delay:.12s}.grid3 .rv:nth-child(3){transition-delay:.24s}
+.vals .rv:nth-child(2){transition-delay:.12s}.vals .rv:nth-child(3){transition-delay:.24s}
+
+@media(max-width:900px){
+ section{padding:76px 0}
+ .hero .wrap,.intro,.cgrid{grid-template-columns:1fr}
+ .grid3,.vals{grid-template-columns:1fr}
+ .stage{order:-1;height:310px}.sway{transform:scale(.68)}
+ #dots{display:none}
+ .links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--ink);padding:24px;gap:18px}
+ .links.open{display:flex}#mb{display:block}
+ .hero{padding-top:110px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .hero h1 .l span{animation:none;transform:none}.hero p,.cta,.hours{animation:none;opacity:1}
+ .sway,.cue i,.hours b{animation:none}.rv{opacity:1;transform:none;transition:none}.rule{transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+<nav id="nav"><div class="wrap">
+ <a class="mark" href="#top" aria-label="Juba Days Law Associates home"><i>JD</i>Juba Days Law</a>
+ <button id="mb" aria-expanded="false" aria-controls="links">Menu</button>
+ <div class="links" id="links">
+  <a href="#firm">The firm</a><a href="#practice">Practice areas</a><a href="#approach">Approach</a><a href="#faq">Before you call</a>
+  <a class="btn" href="#contact">Request a consultation</a>
+ </div>
+</div></nav>
+
+<div id="dots" aria-hidden="true"><a href="#top"></a><a href="#firm"></a><a href="#practice"></a><a href="#approach"></a><a href="#faq"></a><a href="#contact"></a></div>
+
+<main id="top">
+<header class="hero" id="hero">
+ <div class="wrap">
+  <div class="copy" id="copy">
+   <h1><span class="l"><span>Clear law.</span></span><span class="l"><span>Steady counsel,</span></span><span class="l"><span>in Juba.</span></span></h1>
+   <p>Juba Days Law Associates is a law firm in Juba, South Sudan. Call the firm to talk through your matter.</p>
+   <div class="cta"><a class="btn" href="#contact">Request a consultation</a><a class="btn o" href="tel:+211918882297">Call +211 918 882 297</a></div>
+   <div class="hours"><b aria-hidden="true"></b>Google Maps lists the firm as open, closing 17:30. Call to confirm hours.</div>
+  </div>
+  <div class="stage" id="stage" aria-hidden="true"><div class="sway"><div class="tilt" id="tilt"></div></div></div>
+ </div>
+ <button class="cue" id="cue" type="button" aria-label="Scroll to the firm section"><span>Scroll</span><i></i></button>
+</header>
+
+<section id="firm"><div class="wrap intro">
+ <div class="rv"><div class="k">The firm</div><h2>A Juba law firm, ready to take your call</h2><div class="rule"></div>
+  <p>Juba Days Law Associates is listed on Google Maps as a law firm in Juba. The firm’s history, partners and qualifications will be added here once the firm supplies them.</p></div>
+ <aside class="fact rv" id="fact" aria-label="Firm details"><dl>
+  <div><dt>Firm</dt><dd>Juba Days Law Associates</dd></div>
+  <div><dt>Telephone</dt><dd><a href="tel:+211918882297" style="text-decoration:none">+211 918 882 297</a></dd></div>
+  <div><dt>Location</dt><dd>Juba, South Sudan<small>Google Maps code RHQW+9HX. Street address to be confirmed.</small></dd></div>
+  <div><dt>Hours</dt><dd>Closes 17:30<small>As shown on Google Maps on a Tuesday afternoon. Call to confirm other days.</small></dd></div>
+ </dl></aside>
+</div></section>
+
+<section id="practice" class="areas"><div class="wrap">
+ <div class="head rv"><div><div class="k">Practice areas</div><h2>How the firm can help</h2></div><p>These headings are placeholders. The firm confirms which areas it practises, and we replace them.</p></div>
+ <div class="grid3">
+  <article class="pa rv"><span class="tbc">To be confirmed</span><span class="n">01</span><h3>Advice and consultancy</h3><p>Guidance before you sign, sue, buy or decide.</p><a href="#contact" data-t="Advice and consultancy">Ask about this</a></article>
+  <article class="pa rv"><span class="tbc">To be confirmed</span><span class="n">02</span><h3>Disputes and representation</h3><p>Help when a disagreement needs a formal route.</p><a href="#contact" data-t="Disputes and representation">Ask about this</a></article>
+  <article class="pa rv"><span class="tbc">To be confirmed</span><span class="n">03</span><h3>Business and property</h3><p>Support with agreements, companies and land matters.</p><a href="#contact" data-t="Business and property">Ask about this</a></article>
+ </div>
+</div></section>
+
+<section id="approach"><div class="wrap">
+ <div class="rv"><div class="k">Approach</div><h2>What clients should expect</h2></div>
+ <div class="vals">
+  <div class="rv"><h3>Clarity</h3><p>Plain explanations of your options, your risks and what happens next.</p></div>
+  <div class="rv"><h3>Discretion</h3><p>Your matter is handled privately. Share only what is needed for a first conversation.</p></div>
+  <div class="rv"><h3>Responsiveness</h3><p>Straight answers on progress, so you are never left guessing.</p></div>
+ </div>
+</div></section>
+
+<section class="team" id="team"><div class="wrap">
+ <div class="head rv"><div><div class="k">Our team</div><h2>Meet the advocates</h2></div><p>Profiles appear here once the firm provides names, titles and photographs.</p></div>
+ <div class="grid3">
+  <article class="card rv"><div class="ph">Photograph to come</div><h3>Name to be confirmed</h3><p>Title and qualifications to be supplied by the firm.</p></article>
+  <article class="card rv"><div class="ph">Photograph to come</div><h3>Name to be confirmed</h3><p>Title and qualifications to be supplied by the firm.</p></article>
+  <article class="card rv"><div class="ph">Photograph to come</div><h3>Name to be confirmed</h3><p>Title and qualifications to be supplied by the firm.</p></article>
+ </div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+ <div class="rv"><div class="k">Before you call</div><h2>Preparing for a first consultation</h2></div>
+ <div class="faq rv">
+  <details><summary>What should I bring?</summary><p>Any documents about your matter, such as agreements, letters or notices, and a valid ID. Ask the firm if they need anything else.</p></details>
+  <details><summary>Should I send case details through this website?</summary><p>No. Use the form only to introduce yourself and your topic, and share confidential details when you speak to the firm directly.</p></details>
+  <details><summary>How do I find the office?</summary><p>Google Maps lists the location by the code RHQW+9HX in Juba. Use the directions button below, or call +211 918 882 297.</p></details>
+ </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap cgrid">
+ <div class="rv"><div class="k">Contact</div><h2>Arrange a consultation</h2>
+  <div class="info">
+   <div><b>Location</b>Juba, South Sudan (Google Maps code RHQW+9HX). Street address to be confirmed.</div>
+   <div><b>Telephone</b><a href="tel:+211918882297">+211 918 882 297</a></div>
+   <div><b>Hours</b>Closes 17:30 on the day we checked. Call to confirm other days.</div>
+  </div>
+  <a class="btn o" style="color:var(--ink)" href="https://www.google.com/maps/search/?api=1&query=RHQW%2B9HX%20Juba%20South%20Sudan" target="_blank" rel="noopener">Get directions</a>
+ </div>
+ <form class="rv" id="f" novalidate>
+  <label>Full name<input id="nm" autocomplete="name" required></label>
+  <label>Phone number<input id="ph" type="tel" autocomplete="tel" required></label>
+  <label>Topic<select id="tp"><option>General enquiry</option><option>Advice and consultancy</option><option>Disputes and representation</option><option>Business and property</option></select></label>
+  <label>Short note<textarea id="ms" maxlength="300" placeholder="One or two lines. Please leave out confidential details."></textarea></label>
+  <p class="warn" id="er" role="alert"></p>
+  <button class="btn" type="submit">Continue in WhatsApp</button>
+  <p class="warn">This opens WhatsApp with your message ready to send. The firm must confirm WhatsApp is active on this number. Nothing is stored on this page.</p>
+ </form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© Juba Days Law Associates · Juba, South Sudan</span><span>Sample website proposal</span></div></footer>
+<a class="wa" href="https://wa.me/211918882297" target="_blank" rel="noopener">WhatsApp the firm</a>
+
+<script>
+(function(){
+var NUM="211918882297",rm=matchMedia("(prefers-reduced-motion:reduce)").matches,$=function(s){return document.querySelector(s)};
+var nav=$("#nav"),pg=$("#prog"),mb=$("#mb"),lk=$("#links"),copy=$("#copy"),stage=$("#stage");
+mb.onclick=function(){var o=lk.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+lk.onclick=function(e){if(e.target.tagName==="A"){lk.classList.remove("open");mb.setAttribute("aria-expanded","false")}};
+$("#cue").onclick=function(){$("#firm").scrollIntoView({behavior:rm?"auto":"smooth"})};
+
+/* scroll: progress bar, nav, cinematic hero exit, active dot */
+var dots=[].slice.call(document.querySelectorAll("#dots a")),ids=["top","firm","practice","approach","faq","contact"];
+function sc(){
+ var y=scrollY,h=document.documentElement.scrollHeight-innerHeight,vh=innerHeight;
+ pg.style.transform="scaleX("+(h>0?y/h:0)+")";nav.classList.toggle("s",y>30);
+ if(!rm&&y<vh*1.2){var t=Math.min(y/vh,1);copy.style.transform="translateY("+(y*.18)+"px)";copy.style.opacity=1-t*.9;stage.style.transform="translateY("+(y*.1)+"px) scale("+(1-t*.12)+")"}
+ var cur=0;ids.forEach(function(id,i){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<vh*.45)cur=i});
+ dots.forEach(function(d,i){d.classList.toggle("on",i===cur)});
+}
+addEventListener("scroll",sc,{passive:true});sc();
+
+/* 3D stack of law books (CSS 3D) */
+var tilt=$("#tilt"),W=44,D=150,spec=[[250,"#5b1f26"],[290,"#1f3a5a"],[230,"#23483c"],[300,"#5b1f26"],[260,"#3a2a1f"],[285,"#1f3a5a"],[240,"#23483c"]];
+spec.forEach(function(b,i){
+ var h=b[0],el=document.createElement("div");el.className="bk";el.style.cssText="width:"+W+"px;height:"+h+"px;--c:"+b[1];
+ var f=document.createElement("div");f.className="f";f.style.transform="translateZ("+D/2+"px)";f.innerHTML="<i></i>";
+ var r=document.createElement("div");r.className="sd";r.style.cssText="width:"+D+"px;height:"+h+"px;left:"+(W-D)/2+"px;transform:rotateY(90deg) translateZ("+W/2+"px)";
+ var l=document.createElement("div");l.className="sd";l.style.cssText="width:"+D+"px;height:"+h+"px;left:"+(W-D)/2+"px;transform:rotateY(-90deg) translateZ("+W/2+"px)";
+ var t=document.createElement("div");t.className="tp";t.style.cssText="width:"+W+"px;height:"+D+"px;top:"+(h-D)/2+"px;transform:rotateX(90deg) translateZ("+h/2+"px)";
+ el.appendChild(f);el.appendChild(r);el.appendChild(l);el.appendChild(t);tilt.appendChild(el);
+});
+if(!rm&&matchMedia("(hover:hover)").matches){
+ var tx=0,ty=0,cx=0,cy=0,run=false;
+ function loop(){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;tilt.style.transform="rotateX("+(8-cy*10)+"deg) rotateY("+(-28+cx*20)+"deg)";
+  if(Math.abs(tx-cx)>.001||Math.abs(ty-cy)>.001)requestAnimationFrame(loop);else run=false}
+ addEventListener("mousemove",function(e){if(scrollY>innerHeight)return;tx=e.clientX/innerWidth*2-1;ty=e.clientY/innerHeight*2-1;if(!run){run=true;requestAnimationFrame(loop)}});
+}
+
+/* interactive tilt cards */
+if(!rm&&matchMedia("(hover:hover)").matches){
+ document.querySelectorAll(".pa,#fact").forEach(function(c){
+  c.addEventListener("mousemove",function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform="rotateY("+x*8+"deg) rotateX("+(-y*8)+"deg)"});
+  c.addEventListener("mouseleave",function(){c.style.transform=""});
+ });
+}
+
+/* reveals */
+var els=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window&&!rm){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(e){io.observe(e)})}else els.forEach(function(e){e.classList.add("in")});
+
+document.querySelectorAll("[data-t]").forEach(function(a){a.addEventListener("click",function(){$("#tp").value=a.dataset.t})});
+$("#f").addEventListener("submit",function(e){
+ e.preventDefault();var n=$("#nm"),p=$("#ph"),er=$("#er");
+ if(n.value.trim().length<2){er.textContent="Please enter your full name.";n.focus();return}
+ if(!/^[0-9+ ()-]{7,}$/.test(p.value.trim())){er.textContent="Please enter a valid phone number.";p.focus();return}
+ er.textContent="";
+ var t="Hello Juba Days Law Associates, my name is "+n.value.trim()+" ("+p.value.trim()+"). I'd like a consultation about: "+$("#tp").value+". "+$("#ms").value.trim();
+ window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(t),"_blank","noopener");
+});
+})();
+</script>
+</body>
+</html>
